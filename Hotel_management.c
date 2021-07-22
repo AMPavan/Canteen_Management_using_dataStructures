@@ -56,7 +56,7 @@ void Push(int item_number)
 
 void Pop(int item)
 {
-    if (item>7) return;
+    if (item>=7) return;
     struct Order* temp1 = head;
     if(head == NULL)
     {

@@ -121,6 +121,8 @@ void Menu()
 
 void Main_menu( )
 {
+    
+    printf("\n----Options avaliable----\n");
     printf("\nOrder food		   	press 1\n");
     printf("Delete orderd food	   	press 2\n");
     printf("Display order		   	press 3\n");
@@ -146,10 +148,14 @@ int main()
         switch(choice)
         {
         case 1:
+             while(1){
             Menu();
             printf("Order an item from the Menu : ");
             scanf("%d",&item);
+            if (item==0) break;
             Push(item);
+            printf("to exit press 0\n");
+            }
             break;
 
         case 2:
